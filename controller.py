@@ -7,6 +7,12 @@ import atexit
 import os
 import re
 
+#Controllers
+def build(*args, **kwargs):
+	"""Starts the GUI making process."""
+
+	return BCS_IO(*args, **kwargs)
+
 class ErrorHandler():
 	"""Takes care of errors.
 	Meant to be inherited by BCS_IO.
